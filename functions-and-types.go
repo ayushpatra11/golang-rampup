@@ -28,6 +28,15 @@ func sumOfTwoNumbers (a int, b int) int {
 	return a+b
 }
 
+
+// we can also return implicitly. 
+
+func sumOfTwoNumbersImplicit (a int, b int) (int c) {
+	c = a+b
+	return
+}
+
+
 /*
 Types
 
