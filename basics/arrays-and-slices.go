@@ -91,6 +91,17 @@ func matrix(rows, cols int) [][]int {
 	return m
 }
 
+func reverseArray(nums []int, left int, right int) {
+	// There is no default function for reverse, 
+	// have to define it manually.
+	// Recently used it in LC 189 to rotate an array.
+	for left < right {
+		nums[left], nums[right] = nums[right], nums[left]
+		left++
+		right--
+	}
+}
+
 /*
 Important: slices share the underlying array.
 Mutations through one slice are visible through another if they overlap.
