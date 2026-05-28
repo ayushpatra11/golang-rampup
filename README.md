@@ -17,12 +17,13 @@ basics/           variables, constants, types, strings, control flow,
                   modules, memory/performance, idiomatic patterns
 functions/        functions, closures, methods, init, variadic
 types/            structs, interfaces, generics, type assertions,
-                  embedding, functional options
+                  embedding, functional options, iota/enums
 error-handling/   errors, defer, panic, recover, advanced patterns
 concurrency/      goroutines, channels, select, sync primitives,
-                  context, patterns, advanced patterns
+                  context, patterns, advanced patterns, rate limiting
 stdlib/           file I/O, JSON, HTTP, testing, strings/strconv,
-                  time, regex, slices/maps packages, os, slog, flags
+                  time, regex, slices/maps packages, os, slog, flags,
+                  encoding (csv, base64, hex)
 ```
 
 ## Progress
@@ -35,6 +36,7 @@ stdlib/           file I/O, JSON, HTTP, testing, strings/strconv,
 - [x] Week 6 (May 3–7)       — io interfaces, modules, slices/maps packages, functional options
 - [x] Week 7 (May 12–14)     — advanced interfaces, advanced errors, slog
 - [x] Week 8 (May 18–21)     — os/filepath, CLI flags, memory/GC, idiomatic Go
+- [x] Week 9 (May 22–28)     — iota/enums, rate limiting, encoding (csv, base64, hex)
 
 ## Topic index
 
@@ -81,3 +83,6 @@ stdlib/           file I/O, JSON, HTTP, testing, strings/strconv,
 | os, filepath, exec | stdlib/os-and-env.go |
 | slog | stdlib/slog.go |
 | flag / CLI | stdlib/flags-and-cli.go |
+| iota, enums, stringer | types/stringer-enum.go |
+| Rate limiting | concurrency/rate-limiting.go |
+| Encoding (csv, base64, hex) | stdlib/encoding.go |
